@@ -1,0 +1,57 @@
+.testimonials-section {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.testimonials-section h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #0C214A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.testimonial-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+    padding: 30px;
+    max-width: 350px;
+    margin: 10px;
+    transition: transform 0.3s;
+    background-image: url('../assets/img/sky-and-clouds.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.quote {
+    font-size: 1.2rem;
+    color: #0C214A;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #437F97;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1rem;
+    color: #777;
+}

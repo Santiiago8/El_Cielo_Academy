@@ -1,0 +1,20 @@
+.cta-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-image: url('../assets/img/sky-and-clouds.avif');
+    background-size: 50%;
+    background-position: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #0C214A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    transition: background-size 1s ease;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-size: 150%;
+  }
+  
