@@ -34,7 +34,7 @@ export const NavBar = () => {
               <Link to="/services">Services</Link>
               {dropdownVisible && (
                 <ul className="dropdown-menu">
-                  <a href="/regular-shows"><li>Regular Classes</li></a>
+                  <a href="/regular-classes"><li>Regular Classes</li></a>
                   <a href="/workshops"><li>Workshops</li></a>
                   <a href="/shows-and-perfomances"><li>Shows & Performances</li></a>
                 </ul>

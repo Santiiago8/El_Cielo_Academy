@@ -4,6 +4,7 @@ import '../styles/Services.css';
 import regularClassesImage from '../assets/img/regular-clases-card-img.avif';
 import workshopsImage from '../assets/img/WorkShops-img.avif';
 import showsImage from '../assets/img/coach-Brenda.avif';
+import heroImage from '../assets/img/Services-img.avif';
 import { Button } from '../components/Button';
 
 export const Services = () => {
@@ -11,13 +12,18 @@ export const Services = () => {
     <>
       <div data-aos="zoom-in">
         <HeroSection
-          backgroundImage={regularClassesImage}
+          backgroundImage={heroImage}
           title="El Cielo Academy"
           subTitle="Discover The Variety Of Services We Offer"
         />
       </div>
 
       <div className="services-container">
+        <div data-aos="fade-down" className="intro-text">
+          <h2>Unlock Your Potential with El Cielo Academy</h2>
+          <p>Ready to take your skills to the next level? Whether you're a seasoned performer or just starting your journey in circus arts, our specialized programs are designed to help you reach new heights. From our exhilarating Aerial Classes to our dynamic Bungee Dance Fitness sessions, there's something for everyone at El Cielo Academy. Don't wait—book your spot today and join a community where creativity meets discipline. Your next adventure in circus arts is just a click away!</p>
+        </div>
+
         <div data-aos="fade-down">
           <h2>Our Services</h2>
         </div>
@@ -27,7 +33,7 @@ export const Services = () => {
             <div className="card">
               <img src={regularClassesImage} alt="Regular Classes" />
               <h3>Regular Classes</h3>
-              <Button text="More Info" to='/regular-shows' />
+              <Button text="More Info" to='/regular-classes' />
             </div>
           </div>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import image from '../assets/img/coach-Brenda.avif'
 import aerialClassImg from '../assets/img/Aerial-class.avif'
+import circusFactoryImg from '../assets/img/CircusFactory-img.avif'
 import { HeroSection } from '../components/HeroSection'
 import '../styles/RegularClasses.css'
 import { Button } from '../components/Button'
@@ -22,7 +23,7 @@ const classesData = [
   },
   {
     title: 'Bungee Dance Fitness',
-    Description: 'Bungee Dance Fitness is an exciting aerial sport that blends dance, gymnastics, and high-intensity interval training (HIIT). This dynamic workout boosts your metabolism, burns calories, and helps you lose weight while increasing your fitness level, strength, and coordination. The low-impact nature of bungee workouts makes them ideal for injury prevention and offers benefits such as increased range of motion, enhanced flexibility, and improved balance.',
+    Description: 'Bungee Dance Fitness is an aerial sport that combines dance, gymnastics, and HIIT. This dynamic workout boosts metabolism, burns calories, and aids in weight loss while improving fitness levels, strength, and coordination. Its low-impact nature makes it ideal for injury prevention and offers benefits such as increased flexibility and balance.',
     Suitable: ' All levels, Adults of all genders, with a maximum weight limit of 90 kg for safety.',
     Duration: '60 minutes',
     img: image,
@@ -39,7 +40,7 @@ const classesData = [
     Description: 'is our signature class designed for children aged 4 to 13. Led by our professional coaches, this class introduces kids to the exciting world of circus arts in a safe and supportive environment. Each week, children focus on one apparatus at a time, learning basic gymnastics and aerial arts techniques while developing discipline, coordination, and confidence.',
     Suitable: 'Children aged 4 to 13.',
     Duration: '60 minutes',
-    img: image,
+    img: circusFactoryImg,
   },
 ]
 export const RegularClasses = () => {
@@ -53,7 +54,7 @@ export const RegularClasses = () => {
         />
       </div>
       <div className='clasess-container'>
-        <h2>Regular Shows</h2>
+        <h2>Regular Classes</h2>
         <div className="cards-container">
           {classesData.map((card, index) => (
             <div data-aos="fade-up" key={index}>

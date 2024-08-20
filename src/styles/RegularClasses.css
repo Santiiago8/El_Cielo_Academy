@@ -3,6 +3,7 @@
     margin-top: 40px;
     padding: 10px;
     max-width: 1200px;
+    height: auto;
 }
 
 .clasess-container h2 {
@@ -18,6 +19,7 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    height: 1750px;
 }
 
 .card-container {
@@ -27,6 +29,7 @@
     overflow: hidden;
     max-width: 900px;
     width: 100%;
+    height: 35vh;
     transition: transform 0.2s;
 }
 
@@ -36,7 +39,7 @@
 
 .img-container {
     flex: 0 0 320px;
-    height:auto; 
+    height: 100%; 
     overflow: hidden;
 }
 
@@ -49,7 +52,9 @@
 .card-data {
     flex: 2;
     padding: 20px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-data h3 {
@@ -79,6 +84,7 @@
         flex-direction: column;
         align-items: center;
         max-width: 420px;
+        height: auto;
     }
 
     .img-container {

@@ -1,9 +1,21 @@
-
 .services-container {
   padding: 80px;
   max-width: 100%;
   margin: auto;
   text-align: center;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 24px;
+  margin-bottom: 20px;
+  width: 1000px;
+  margin: 50px auto 50px auto;
+}
+
+.intro-text p{
+  text-align: justify;
+  text-align-last: center;
 }
 
 .services-container h2 {
