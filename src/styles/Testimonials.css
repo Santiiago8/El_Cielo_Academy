@@ -1,57 +1,101 @@
 .testimonials-section {
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    padding: 50px 20px;
-    max-width: 1500px;
-    margin: auto;
+    padding: 4rem 2rem;
+    background-color: #F2F2F2;
 }
 
-.testimonials-section h2 {
-    font-size: 3rem;
-    margin-bottom: 40px;
+.testimonials-title {
+    font-size: 2.5rem;
+    font-weight: bold;
     color: #0C214A;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .testimonials-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-
+    display: grid; /* Cambiado a grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 1.5rem; /* Espaciado entre testimonios */
+    padding: 0 2.5rem;
 }
 
 .testimonial-card {
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
-    padding: 30px;
-    max-width: 350px;
-    margin: 10px;
-    transition: transform 0.3s;
-    background-image: url('../assets/img/sky-and-clouds.avif');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    min-height: 200px; /* Ajuste de altura mínima */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card-content {
+    flex-grow: 1; /* Permite que el contenido crezca uniformemente */
+}
+
+.testimonial-author {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #0C214A;
+}
+
+.testimonial-role {
+    color: #5D6970;
 }
 
 .testimonial-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #68A1C8, #437F97);
+}
+
+.quote-icon {
+    color: #68A1C8;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .quote {
-    font-size: 1.2rem;
-    color: #0C214A;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4A4A4A;
+    margin-bottom: 1.5rem;
+}
+
+.user-icon {
+    color: #437F97;
+    font-size: 1.5rem;
 }
 
 .name {
-    font-size: 1.5rem;
     font-weight: bold;
-    color: #437F97;
-    margin-bottom: 5px;
+    color: #0C214A;
+    margin-bottom: 0.25rem;
 }
 
 .title {
-    font-size: 1rem;
-    color: #777;
+    font-size: 0.875rem;
+    color: #68A1C8;
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 columna en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
 }

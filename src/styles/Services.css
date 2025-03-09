@@ -1,73 +1,111 @@
+/* Contenedor general de servicios */
 .services-container {
-  padding: 80px;
-  max-width: 100%;
+  padding: 40px 20px; /* Reducir el padding lateral */
+  max-width: 1200px;
   margin: auto;
   text-align: center;
 }
 
+/* Estilos de texto introductorio */
 .intro-text {
   font-size: 1.2rem;
   line-height: 24px;
   margin-bottom: 20px;
-  width: 1000px;
-  margin: 50px auto 50px auto;
+  width: 100%;
+  margin: 30px auto; /* Reducir el margen superior e inferior */
 }
 
-.intro-text p{
+.intro-text p {
   text-align: justify;
   text-align-last: center;
 }
 
+/* Título de la sección de servicios */
 .services-container h2 {
   font-size: 2rem;
-  margin-bottom: 50px;
+  margin-bottom: 30px; /* Reducir espacio debajo del título */
   color: #437F97;
   text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
 }
 
+/* Contenedor de las tarjetas */
 .cards-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre las tarjetas */
   flex-wrap: wrap;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  overflow: hidden;
+  padding: 10px 0; /* Reducir el padding arriba y abajo del contenedor */
+  max-height: 600px;
 }
 
+/* Estilos base de la tarjeta */
 .card {
   background-color: #f9f9f9;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-  transition: transform 0.2s ease;
-  flex: 1;
-  min-width: 280px;
-  max-width: 280px;
-  margin: 20px;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.card img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos de hover */
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  max-width: 320px;
+  margin: 10px auto;
+  height: auto;
 }
 
-.card h3 {
+/* Animación al pasar el cursor por la tarjeta */
+.card:hover {
+  transform: scale(1.05); /* Solo escalado */
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen dentro de la tarjeta */
+.card-image img {
+  width: 100%;
+  height: 380px; /* Ajusta la altura fija de las imágenes */
+  object-fit: cover; /* Asegura que las imágenes no se deformen */
+}
+
+/* Contenedor del contenido de la tarjeta */
+.card-content {
+  margin-top: 35px;
+  margin-bottom: 0;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+/* Estilo del título de la tarjeta */
+.card-content h3 {
   font-size: 1.5rem;
-  margin: 20px 0;
+  margin: 10px 0;
   color: #0C214A;
 }
 
+/* Contenedor del botón */
 .btn-container {
-  margin-top: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Efectos de medios (Responsive) */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    padding: 20px 0;
+  }
 }
 
 @media (max-width: 480px) {
   .services-container {
-    padding: 40px;
+    padding: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card img {
+    height: 180px;
   }
 }

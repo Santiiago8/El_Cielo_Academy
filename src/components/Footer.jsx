@@ -13,8 +13,9 @@ export const Footer = () => {
                 <div className='footer-section'>
                     <h4>Contact Us</h4>
                     <p>Elcieloacademy21@gmail.com </p>
-                    <p>+201128239365</p>
-                    <p>Maadi as Sarayat Al Gharbeyah, Victoria Sq (Intersection Rd 216 & Rd 250).</p>
+                    <p>Maadi The Field</p>
+                    <p>+201128239365 +201055319942</p>
+                    <p>New Cairo O1 Brass Monkeys +201030279302</p>
                 </div>
                 <div className='footer-section'>
                     <h4>Quick Links</h4>
@@ -28,10 +29,10 @@ export const Footer = () => {
                 <div className='footer-section'>
                     <h4>Follow Us</h4>
                     <div className='social-links'>
-                        <a href="" target='_blank'>Facebook</a>
-                        <a href="" target='_blank'>Twitter</a>
-                        <a href="" target='_blank'>Instagram</a>
-                        <a href="" target='_blank'>LinkedIn</a>
+                        <a href="https://www.facebook.com/profile.php?id=100072068926217" target='_blank'>Facebook</a>
+                        <a href="" target='_blank'>TikTok</a>
+                        <a href="https://www.instagram.com/el_cielo_academy/" target='_blank'>Instagram</a>
+                        <a href="https://www.youtube.com/@ElCieloAcademy" target='_blank'>YouTube</a>
                     </div>
                 </div>
             </div>

@@ -25,7 +25,7 @@ export const NavBar = () => {
         <div className='links-container'>
           <ul className="navbar-links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/about">About Us</Link></li>
             <li 
               className="services-menu" 
               onMouseEnter={handleMouseEnter} 
@@ -40,7 +40,7 @@ export const NavBar = () => {
                 </ul>
               )}
             </li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
       </div>

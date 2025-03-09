@@ -45,6 +45,28 @@
     box-sizing: border-box;
 }
 
+.address-link,
+.contact-container a {
+    color: #0C214A; 
+    text-decoration: none; 
+}
+
+.address-link:visited,
+.contact-container a:visited {
+    color: #0C214A;
+}
+
+.address-link:hover,
+.contact-container a:hover {
+    color: #007bff;
+}
+
+.address-link:active,
+.contact-container a:active {
+    color: #007bff; 
+}
+
+
 .contact-data,
 .email-container,
 .phone-number,

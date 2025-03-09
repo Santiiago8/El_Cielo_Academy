@@ -29,30 +29,37 @@ export const Services = () => {
         </div>
 
         <div className="cards-container">
-          <div data-aos="fade-right">
-            <div className="card">
+          <div data-aos="fade-right" className="card">
+            <div className="card-image">
               <img src={regularClassesImage} alt="Regular Classes" />
+            </div>
+            <div className="card-content">
               <h3>Regular Classes</h3>
               <Button text="More Info" to='/regular-classes' />
             </div>
           </div>
 
-          <div data-aos="fade-up">
-            <div className="card">
+          <div data-aos="fade-up" className="card">
+            <div className="card-image">
               <img src={workshopsImage} alt="Workshops" />
+            </div>
+            <div className="card-content">
               <h3>Workshops</h3>
               <Button text="More Info" to='/workshops' />
             </div>
           </div>
 
-          <div data-aos="fade-left">
-            <div className="card">
+          <div data-aos="fade-left" className="card">
+            <div className="card-image">
               <img src={showsImage} alt="Shows & Performances" />
+            </div>
+            <div className="card-content">
               <h3>Shows & Performances</h3>
               <Button text="More Info" to='/shows-and-perfomances' />
             </div>
           </div>
         </div>
+
         <div className='btn-container'>
           <Button text='Book Now!' to='/contact' />
         </div>
